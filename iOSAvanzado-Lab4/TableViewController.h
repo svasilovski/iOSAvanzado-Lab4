@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Servicios/model/Product.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) NSMutableArray<Product*>* products;
+
+-(void)reloadTable;
 
 @end
 

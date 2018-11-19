@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EC469F521A2E72200A83257 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC469F421A2E72200A83257 /* TableViewCell.m */; };
+		7EC469F921A2ED1D00A83257 /* ProductServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC469F821A2ED1D00A83257 /* ProductServices.m */; };
+		7EC469FD21A2EEA200A83257 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC469FC21A2EEA200A83257 /* Product.m */; };
+		7EC46A0021A2F01E00A83257 /* ServiceError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC469FF21A2F01E00A83257 /* ServiceError.m */; };
+		7EC46A0321A2F21D00A83257 /* WebImageOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC46A0221A2F21D00A83257 /* WebImageOperations.m */; };
 		7ED3BCB621A1A0E6009CF760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED3BCB521A1A0E6009CF760 /* AppDelegate.m */; };
 		7ED3BCB921A1A0E7009CF760 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED3BCB821A1A0E7009CF760 /* ViewController.m */; };
 		7ED3BCBC21A1A0E7009CF760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED3BCBA21A1A0E7009CF760 /* Main.storyboard */; };
@@ -37,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7EC469F321A2E72200A83257 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		7EC469F421A2E72200A83257 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		7EC469F721A2ED0800A83257 /* ProductServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductServices.h; sourceTree = "<group>"; };
+		7EC469F821A2ED1D00A83257 /* ProductServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductServices.m; sourceTree = "<group>"; };
+		7EC469FB21A2EE8A00A83257 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		7EC469FC21A2EEA200A83257 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		7EC469FE21A2EF7500A83257 /* ServiceError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceError.h; sourceTree = "<group>"; };
+		7EC469FF21A2F01E00A83257 /* ServiceError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceError.m; sourceTree = "<group>"; };
+		7EC46A0121A2F21D00A83257 /* WebImageOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebImageOperations.h; sourceTree = "<group>"; };
+		7EC46A0221A2F21D00A83257 /* WebImageOperations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebImageOperations.m; sourceTree = "<group>"; };
 		7ED3BCB121A1A0E6009CF760 /* iOSAvanzado-Lab4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSAvanzado-Lab4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED3BCB421A1A0E6009CF760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7ED3BCB521A1A0E6009CF760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +98,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EC469F621A2ECE100A83257 /* Servicios */ = {
+			isa = PBXGroup;
+			children = (
+				7EC469FA21A2EE4400A83257 /* model */,
+				7EC469F721A2ED0800A83257 /* ProductServices.h */,
+				7EC469F821A2ED1D00A83257 /* ProductServices.m */,
+				7EC46A0121A2F21D00A83257 /* WebImageOperations.h */,
+				7EC46A0221A2F21D00A83257 /* WebImageOperations.m */,
+			);
+			path = Servicios;
+			sourceTree = "<group>";
+		};
+		7EC469FA21A2EE4400A83257 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7EC469FB21A2EE8A00A83257 /* Product.h */,
+				7EC469FC21A2EEA200A83257 /* Product.m */,
+				7EC469FE21A2EF7500A83257 /* ServiceError.h */,
+				7EC469FF21A2F01E00A83257 /* ServiceError.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		7ED3BCA821A1A0E6009CF760 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +144,7 @@
 		7ED3BCB321A1A0E6009CF760 /* iOSAvanzado-Lab4 */ = {
 			isa = PBXGroup;
 			children = (
+				7EC469F621A2ECE100A83257 /* Servicios */,
 				7ED3BCB421A1A0E6009CF760 /* AppDelegate.h */,
 				7ED3BCB521A1A0E6009CF760 /* AppDelegate.m */,
 				7ED3BCB721A1A0E7009CF760 /* ViewController.h */,
@@ -118,6 +157,8 @@
 				7ED3BCBD21A1A0E7009CF760 /* iOSAvanzado_Lab4.xcdatamodeld */,
 				7ED3BCEC21A1AEF6009CF760 /* TableViewController.h */,
 				7ED3BCED21A1AEF6009CF760 /* TableViewController.m */,
+				7EC469F321A2E72200A83257 /* TableViewCell.h */,
+				7EC469F421A2E72200A83257 /* TableViewCell.m */,
 			);
 			path = "iOSAvanzado-Lab4";
 			sourceTree = "<group>";
@@ -270,9 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC469F921A2ED1D00A83257 /* ProductServices.m in Sources */,
+				7EC46A0021A2F01E00A83257 /* ServiceError.m in Sources */,
 				7ED3BCBF21A1A0E7009CF760 /* iOSAvanzado_Lab4.xcdatamodeld in Sources */,
+				7EC469F521A2E72200A83257 /* TableViewCell.m in Sources */,
+				7EC46A0321A2F21D00A83257 /* WebImageOperations.m in Sources */,
 				7ED3BCEE21A1AEF6009CF760 /* TableViewController.m in Sources */,
 				7ED3BCB921A1A0E7009CF760 /* ViewController.m in Sources */,
+				7EC469FD21A2EEA200A83257 /* Product.m in Sources */,
 				7ED3BCC721A1A0E8009CF760 /* main.m in Sources */,
 				7ED3BCB621A1A0E6009CF760 /* AppDelegate.m in Sources */,
 			);
