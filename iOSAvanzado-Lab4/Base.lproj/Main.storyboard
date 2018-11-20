@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="RO2-Xr-dc6">
+                            <rect key="frame" x="0.0" y="82" width="375" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="54" id="0V8-Jm-DII" customClass="TableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="54"/>
@@ -86,11 +90,13 @@
                                 <state key="normal" title="Recargar"/>
                                 <connections>
                                     <action selector="recargarTapped:" destination="N09-iN-nam" eventType="touchUpInside" id="U6s-Ao-56o"/>
+                                    <action selector="recargarTapped:" destination="yfK-Kf-ExT" eventType="touchUpInside" id="eNg-F4-kLK"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="RO2-Xr-dc6" id="n0A-Xp-ukh"/>
                         <outlet property="tableViwe" destination="FYZ-zw-chi" id="oRJ-tR-hhN"/>
                     </connections>
                 </tableViewController>
