@@ -47,6 +47,7 @@
          }
          if (error){
              NSLog(@"%@", error.reason);
+             [self.activityIndicator setHidden:YES];
          }
      }];
 }
